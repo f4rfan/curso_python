@@ -16,3 +16,4 @@ for x in mult_3_5:
     total=total+x
 
 print(total)
+print(sum(mult_3_5))

@@ -1,8 +1,8 @@
 def vocales():
     cadena = input("Dame la cadena a analizar: ")
-    vocal = ['a','e','i','o','u','A','E','I','O','U']
+    vocal = ['a','e','i','o','u']
     resultado = []
-    for i in cadena:
+    for i in cadena.lower():
         if i in vocal:
             if i not in resultado:
                 resultado.append(i)

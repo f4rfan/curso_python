@@ -4,14 +4,14 @@ def max_de_tres():
     c = input("Dame el tercer numero: ")
     if a>b:
         if a>c:
-            print(a)
+            print('Entre los numeros introducidos, el mas grande es el primero,',a)
         else:
-            print(c)
+            print('Entre los numeros introducidos, el mas grande es el tercero,',c)
     else:
         if b>c:
-            print(b)
+            print('Entre los numeros introducidos, el mas grande es el segundo,',b)
         else:
-            print(c)
+            print('Entre los numeros introducidos, el mas grande es el tercero,',c)
     input()
 
 

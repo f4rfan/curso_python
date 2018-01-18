@@ -1,22 +1,20 @@
 def contar_vocales():
     cadena = input("Cadena a analizar: ")
-    cantidades = [0,0,0,0,0]
+    cantidades = {'a':0,'e':0,'i':0,'o':0,'u':0}
     for i in cadena.lower():
         if i=='a':
-            cantidades[0]+=1
+            cantidades['a']+=1
         elif i=='e':
-            cantidades[1]+=1
+            cantidades['e']+=1
         elif i=='i':
-            cantidades[2]+=1
+            cantidades['i']+=1
         elif i=='o':
-            cantidades[3]+=1
+            cantidades['o']+=1
         elif i=='u':
-            cantidades[4]+=1
-    vocales = ["a","e","i","o","u"]
+            cantidades['u']+=1
     print("La cadena contiene: ")
-    for i in range(5):
-        print(vocales[i],cantidades[i])
+    for i in cantidades:
+        print(i,'=',cantidades[i])
     input()
 
 contar_vocales()
-    
